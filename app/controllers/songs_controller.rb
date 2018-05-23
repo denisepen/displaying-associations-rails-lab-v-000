@@ -60,7 +60,7 @@ class SongsController < ApplicationController
 
   def artist_name
     # binding.pry
-    @artist = Artist.find(@song.artist_id)
-    @artist.name
+    @song = Song.find(params[:id])
+    @song.artist.name - @song.title
   end
 end
