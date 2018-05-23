@@ -1,8 +1,8 @@
 <h1><%= @Artist.name %></h1>
- 
+
 <h3><%= pluralize(@artist.song_count, 'Songs') %></h3>
 <ul>
-  <% @Artist.songs.each do |p| %>
+  <% @artist.songs.each do |p| %>
     <li><%= link_to p.title, song_path(p) %></li>
   <% end %>
 </ul>
