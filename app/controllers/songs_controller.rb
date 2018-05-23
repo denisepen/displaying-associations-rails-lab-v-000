@@ -58,9 +58,5 @@ class SongsController < ApplicationController
     params.require(:song).permit(:title,:artist_id)
   end
 
-  def artist_name
-    # binding.pry
-    @song = Song.find(params[:id])
-    @song.artist.name - @song.title
-  end
+
 end
