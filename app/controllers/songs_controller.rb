@@ -15,7 +15,7 @@ class SongsController < ApplicationController
 
   def create
     @song = Song.new(song_params)
-    
+
 
     if @song.save
       @artist = Artist.find(@song.artist_id)
