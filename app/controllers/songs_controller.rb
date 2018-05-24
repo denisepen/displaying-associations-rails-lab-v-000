@@ -20,7 +20,6 @@ class SongsController < ApplicationController
     binding.pry
 
     if @song.save
-
       # @artist = Artist.find(@song.artist_id)
       # @artist.songs << @song
       redirect_to @song
