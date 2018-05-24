@@ -3,8 +3,7 @@ class Song < ActiveRecord::Base
 
   # def artist_name
   #
-  #   @song = Song.find(params[:id])
-  #   @song.artist.name - @song.title
+  #  self.artist.name
   # end
 
 end
