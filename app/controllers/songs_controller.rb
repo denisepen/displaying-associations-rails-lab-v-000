@@ -21,8 +21,8 @@ class SongsController < ApplicationController
 
     if @song.save
 
-      @artist = Artist.find(@song.artist_id)
-      @artist.songs << @song
+      # @artist = Artist.find(@song.artist_id)
+      # @artist.songs << @song
       redirect_to @song
     else
       render :new
