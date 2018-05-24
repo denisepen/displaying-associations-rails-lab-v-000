@@ -5,4 +5,8 @@ class Song < ActiveRecord::Base
      self.artist.name
   end
 
+  def song_link
+    self.artist.name  - self.title
+  end
+
 end
