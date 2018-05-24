@@ -6,7 +6,7 @@ class Song < ActiveRecord::Base
   end
 
   def song_link
-    self.artist.name  "-" self.title
+    "#{self.artist.name}  - #{self.title}"
   end
 
 end
